@@ -7,7 +7,7 @@ import time
 
 
 cid ="61ce98e1500d48438714352d227ede3e" 
-secret = "5472a4601ac94130bd9f1a097eb7095a"
+secret = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 username = "bradenhayes55"
 redirect_url='http://localhost:8000'
 client_credentials_manager = SpotifyClientCredentials(client_id=cid, client_secret=secret) 
