@@ -6,9 +6,9 @@ import schedule
 import time
 
 
-cid ="61ce98e1500d48438714352d227ede3e" 
+cid ="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" 
 secret = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-username = "bradenhayes55"
+username = "xxxxxxxxxxxxxx"
 redirect_url='http://localhost:8000'
 client_credentials_manager = SpotifyClientCredentials(client_id=cid, client_secret=secret) 
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
@@ -34,7 +34,7 @@ def create_and_add(ids):
     
     sp.user_playlist_add_tracks(username,playlist_id[0],ids)
     try:
-        sp.start_playback(device_id='15f2001582a255b113c082f8327e1dcbc21e4ea8',context_uri="spotify:playlist:" +playlist_id[0])
+        sp.start_playback(device_id='xxxxxxxxxxxxxxxxxxxxxxxxxxxxx',context_uri="spotify:playlist:" +playlist_id[0])
     except:
             print("Device is offline")
 
